@@ -22,10 +22,13 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
-let syntastic_javascript_checkers = ['jscs', 'eslint']
+let syntastic_javascript_checkers = ['eslint']
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -45,3 +48,13 @@ set background=dark
 
 let g:solarized_termcolors = 256
 colorscheme solarized
+
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+let g:UltiSnipsEditSplit='vertical'
+
+let g:UltiSnipsSnippetsDir='/Users/Mikey/.vim/mysnippets'
+let g:UltiSnipsSnippetDirectories=["mysnippets", "UltiSnips"]
+let g:UltiSnipsListSnippets='<s-tab>'
+
