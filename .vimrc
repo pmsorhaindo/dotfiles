@@ -25,6 +25,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
