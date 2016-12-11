@@ -34,10 +34,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
 
 let g:syntastic_aggregate_errors = 1
 
@@ -58,3 +58,18 @@ let g:UltiSnipsSnippetsDir='/Users/Mikey/.vim/mysnippets'
 let g:UltiSnipsSnippetDirectories=["mysnippets", "UltiSnips"]
 let g:UltiSnipsListSnippets='<s-tab>'
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](node_modules)',
+  \ }
+
+nnoremap <Leader>j :m .+1<CR>==
+nnoremap <Leader>k :m .-2<CR>==
+inoremap <Leader>j <Esc>:m .+1<CR>==gi
+inoremap <Leader>k <Esc>:m .-2<CR>==gi
+vnoremap <Leader>j :m '>+1<CR>gv=gv
+vnoremap <Leader>k :m '<-2<CR>gv=gv
+
+set statusline="%f%m%r%h%w
