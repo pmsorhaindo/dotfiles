@@ -1,6 +1,14 @@
-" Because I'm 1337
-" Because I don't want people touching my keyboard
-" Because I hate myself
+"Mikey's .vimrc
+"
+" This is obviously a work in progress as I can barely vim.
+" Things that need doing:
+" - Use Vim 8.
+" - A script to build and install vim from source.
+" - Find away to sync and pull my snippets with github or somewhere else
+
+" Because I'm 1337..
+" Because I don't want people touching my keyboard..
+" Because I hate myself!
 map  <Left>  <nop>
 map  <Right> <nop>
 map  <Up>   <nop>
