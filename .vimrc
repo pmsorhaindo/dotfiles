@@ -93,6 +93,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 "Qargs move the files in quickfix to args
+"http://vimcasts.org/episodes/project-wide-find-and-replace/
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
   " Building a hash ensures we get each buffer only once
